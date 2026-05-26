@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI+X Elite Class · 真实项目实战-倒计时看板</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="ambient-canvas">
+        <div class="ambient-gradient"></div>
+        <div class="ambient-grid"></div>
+        <div class="ambient-orbs">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+        <div class="ambient-particles"></div>
+    </div>
+    
+    <div class="app-container">
+        <main class="main-content">
+            <section class="hero-header">
+                <div class="brand-badge">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                    <span>Elite Program</span>
+                </div>
+                <div class="brand-title">
+                    <h1>AI+X Elite Class</h1>
+                </div>
+                <div class="brand-subtitle">
+                    <span>真实项目实战 · 倒计时看板</span>
+                </div>
+                <div class="brand-motto">
+                    <span>顺势而为，迎接挑战，顶峰相见！</span>
+                </div>
+            </section>
+            
+            <section class="header-section">
+                <div class="header-grid">
+                    <div class="header-left">
+                        <div class="time-display">
+                            <span class="time-label">BEIJING TIME</span>
+                            <span class="time-value" id="currentTime"></span>
+                        </div>
+                    </div>
+                    <div class="header-center"></div>
+                    <div class="header-right">
+                        <div class="controls-panel">
+                            <div class="status-indicator" id="timerStatus">
+                                <div class="status-dot"></div>
+                                <span class="status-text">HALTED</span>
+                            </div>
+                            <div class="control-buttons">
+                                <button class="control-btn start-btn" id="startBtn">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                                    </svg>
+                                    <span>启动</span>
+                                </button>
+                                <button class="control-btn stop-btn" id="stopBtn" disabled>
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="6" y="4" width="4" height="16"></rect>
+                                        <rect x="14" y="4" width="4" height="16"></rect>
+                                    </svg>
+                                    <span>停止</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="stats-section">
+                <div class="stats-container" id="statsContainer"></div>
+            </section>
+            
+            <section class="timeline-section">
+                <h3 class="section-title">EXECUTION TIMELINE</h3>
+                <div class="timeline-track">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-items" id="timelineContainer"></div>
+                </div>
+            </section>
+            
+            <section class="milestones-section">
+                <div class="cards-container" id="cardsContainer"></div>
+            </section>
+            
+            <footer class="footer-section">
+                <div class="footer-content">
+                    <div class="footer-divider"></div>
+                    <p class="copyright-text">
+                        <span class="copyright-label">李华设计</span>
+                        <span class="copyright-separator">·</span>
+                        <span class="copyright-date">2026-05-26</span>
+                    </p>
+                </div>
+            </footer>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
