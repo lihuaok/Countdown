@@ -65,6 +65,7 @@ timer/
 #### CountdownBoard
 
 主控制器类，负责：
+
 - 任务加载和保存
 - 倒计时更新
 - 页面渲染
@@ -102,6 +103,7 @@ getDefaultNodes() {
 ### 调整样式
 
 编辑 [styles.css](file:///d:/skill/timer/styles.css) 自定义视觉效果：
+
 - 颜色主题：修改 `:root` 中的 CSS 变量
 - 字体：修改 `font-family` 属性
 - 动画：调整 `@keyframes` 定义
@@ -116,3 +118,5 @@ getDefaultNodes() {
 ## 许可证
 
 MIT License
+
+D:\onenotes\OneDrive\文档\GitHub\Countdown-main
