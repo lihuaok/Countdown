@@ -67,7 +67,7 @@ class CountdownBoard {
                 id: 'node-6',
                 name: '班级成果展',
                 description: '举办班级项目成果展示与评审',
-                deadline: new Date(currentYear, 5, 17, 23, 59, 59).toISOString(),
+                deadline: new Date(currentYear, 5, 24, 23, 59, 59).toISOString(),
                 completed: false
             }
         ];
